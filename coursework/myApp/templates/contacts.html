@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="contact-page">
+    <div class="contact-hero text-center py-5">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold mb-4" style="color: rgb(178, 34, 34); margin-top: -50px; font-size: 36px;">Контакты</h1>
+            <p class="lead mb-5" style="font-size: 20px;">Свяжитесь с нами удобным для вас способом</p>
+        </div>
+    </div>
+
+    <div class="container py-5 lead" style="margin-top: -140px;">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h2 class="h3 font-weight-bold mb-4" style="color: rgb(178, 34, 34);">Полиграфия</h2>
+
+                        <div class="contact-info mb-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="contact-icon mr-3">
+                                    <i class="fas fa-map-marker-alt fa-2x" style="color: rgb(178, 34, 34);"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h5 font-weight-bold mb-1">Адрес:</h3>
+                                    <p class="mb-0">Нижний Новгород, ул. Бетанкура, 6</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="contact-icon mr-3">
+                                    <i class="fas fa-phone-alt fa-2x" style="color: rgb(178, 34, 34);"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h5 font-weight-bold mb-1">Телефон:</h3>
+                                    <p class="mb-0"><a>+7 (831) 435-13-75</a></p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="contact-icon mr-3">
+                                    <i class="fas fa-envelope fa-2x" style="color: rgb(178, 34, 34);"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h5 font-weight-bold mb-1">E-mail:</h3>
+                                    <p class="mb-0"><a>poligraphy_1@mail.ru</a></p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="contact-icon mr-3">
+                                    <i class="fas fa-clock fa-2x" style="color: rgb(178, 34, 34);"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h5 font-weight-bold mb-1">Режим работы:</h3>
+                                    <p class="mb-1">ПН - ПТ с 9:00 до 18:00</p>
+                                    <p class="mb-0">СБ - ВС - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="production-info mt-4 pt-4 border-top">
+                            <h3 class="h5 font-weight-bold mb-3" style="color: rgb(178, 34, 34);">Наше производство:</h3>
+                            <p class="mb-2">г. Нижний Новгород, Долгополова, 77</p>
+                            <p class="small text-muted mb-1">* Приём заказов ведётся только в центральном офисе.</p>
+                            <p class="small text-muted">* Выдача срочных заказов с производства только по согласованию с менеджером.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 lead">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h2 class="h3 font-weight-bold mb-4" style="color: rgb(178, 34, 34);">Оставьте заявку</h2>
+                        <p class="mb-4">Наш менеджер свяжется с Вами в ближайшее время!</p>
+
+                        <form method="post" class="needs-validation" novalidate id="contactForm">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">Имя *</label>
+                                    <input type="text" class="form-control" id="firstName" name="first_name" required>
+                                    <div class="invalid-feedback">Пожалуйста, введите ваше имя.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Фамилия *</label>
+                                    <input type="text" class="form-control" id="lastName" name="last_name" required>
+                                    <div class="invalid-feedback">Пожалуйста, введите вашу фамилию.</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Телефон *</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                <div class="invalid-feedback">Пожалуйста, введите ваш телефон.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Комментарий</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-danger btn-lg py-2" type="submit" style="background-color: rgb(178, 34, 34); border: none;">
+                                    Отправить заявку <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <div id="thankYouModal" class="modal fade" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-success text-white">
+                                        <h5 class="modal-title">Спасибо!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Ваша заявка принята. Скоро наши менеджеры с Вами свяжутся.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                if (sessionStorage.getItem("formSubmitted")) {
+                                    const modal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+                                    modal.show();
+                                    sessionStorage.removeItem("formSubmitted");
+                                }
+
+                                document.getElementById("contactForm").addEventListener("submit", function () {
+                                    sessionStorage.setItem("formSubmitted", "true");
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

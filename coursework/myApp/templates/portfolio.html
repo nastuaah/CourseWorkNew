@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5 pt-4">
+   <h1 class="text-center mb-4 lead" style="color: rgb(178, 34, 34); margin-top: -60px; font-size: 36px;">Портфолио</h1>
+
+   <div class="portfolio-strip-container">
+       <div class="portfolio-strip">
+           <div class="portfolio-item">
+               <img src="/media/p1.jpg" alt="Портфолио 1" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p2.jpg" alt="Портфолио 2" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p3.jpg" alt="Портфолио 3" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p4.jpg" alt="Портфолио 4" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p5.jpg" alt="Портфолио 5" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p6.jpg" alt="Портфолио 6" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p7.jpg" alt="Портфолио 7" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p8.jpg" alt="Портфолио 8" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p9.jpg" alt="Портфолио 9" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+           <div class="portfolio-item">
+               <img src="/media/p10.jpg" alt="Портфолио 10" style="width: 400px; height: 300px; object-fit: cover;">
+           </div>
+       </div>
+   </div>
+</div>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+       const strip = document.querySelector('.portfolio-strip');
+       const items = document.querySelectorAll('.portfolio-item');
+       const itemWidth = items[0].offsetWidth;
+       const containerWidth = document.querySelector('.portfolio-strip-container').offsetWidth;
+       let position = 0;
+       strip.style.width = `${items.length * itemWidth}px`;
+
+       function moveStrip() {
+           position -= 1;
+           if (Math.abs(position) >= itemWidth * 4) {
+               position = 0;
+               strip.appendChild(strip.firstElementChild);
+           }
+           strip.style.transform = `translateX(${position}px)`;
+           requestAnimationFrame(moveStrip);
+       }
+
+       moveStrip();
+   });
+</script>
+
+<h2 class="text-center mt-5 lead" style="font-size: 36px;">Отзывы</h2>
+
+<div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        {% for review in reviews|slice:":6" %}
+            {% if forloop.counter0|divisibleby:2 %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <div class="row justify-content-center">
+            {% endif %}
+                        <div class="col-md-6 d-flex flex-column align-items-center text-center px-3">
+                            <img src="{{ review.image_url }}" class="rounded mb-2"
+                                 style="width: 350px; height: 400px; object-fit: cover;">
+                            <p class="px-3 lead" style="font-size: 14px; text-align: justify;">{{ review.description }}</p>
+                        </div>
+            {% if forloop.counter0|add:1|divisibleby:2 or forloop.last %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<script>
+    let currentReview = 0;
+    const reviews = document.querySelectorAll('.review');
+
+    function showReview(index) {
+        reviews.forEach((review, i) => {
+            review.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    function prevReview() {
+        currentReview = (currentReview === 0) ? reviews.length - 1 : currentReview - 1;
+        showReview(currentReview);
+    }
+
+    function nextReview() {
+        currentReview = (currentReview === reviews.length - 1) ? 0 : currentReview + 1;
+        showReview(currentReview);
+    }
+
+    showReview(currentReview);
+</script>
+
+{% endblock %}
+

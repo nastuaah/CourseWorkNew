@@ -1,0 +1,278 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 font-weight-bold" style="color: rgb(178, 34, 34); font-size: 36px; margin-top: -40px;">Оплата и доставка</h1>
+    </div>
+
+    <div class="row mb-5 align-items-center">
+        <div class="col-lg-7">
+            <div class="ps-lg-4">
+                <h2 class="h3 mb-4 text-dark font-weight-bold;" style="margin-top: -20px;">Способы оплаты</h2>
+                <div class="card border-0 rounded-4 shadow-sm mb-4">
+                    <div class="card-body p-4 lead">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="mr-3 text-danger">
+                                        <i class="fas fa-credit-card fa-2x"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <h4 class="h5 mb-2">Банковские карты</h4>
+                                        <p class="mb-0 small">Visa, MasterCard, МИР</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="mr-3 text-danger">
+                                        <i class="fas fa-wallet fa-2x"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <h4 class="h5 mb-2">Электронные деньги</h4>
+                                        <p class="mb-0 small">Qiwi, Webmoney, Яндекс.Деньги</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="d-flex align-items-start">
+                                    <div class="mr-3 text-danger">
+                                        <i class="fas fa-file-invoice-dollar fa-2x"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <h4 class="h5 mb-2">Безналичный расчет</h4>
+                                        <p class="mb-0 small">Для юридических лиц</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="mr-3 text-danger">
+                                        <i class="fas fa-money-bill-wave fa-2x"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <h4 class="h5 mb-2">Наличные</h4>
+                                        <p class="mb-0 small">Для физических лиц</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 rounded-4 shadow-sm mb-5 overflow-hidden">
+        <div class="card-header bg-danger text-white py-3">
+            <h2 class="h4 mb-0 lead" style="font-weight: bold;">Условия доставки</h2>
+        </div>
+        <div class="card-body p-0">
+            <div class="row no-gutters">
+                <div class="col-md-4 p-4 border-right">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-danger">
+                            <i class="fas fa-city fa-2x"></i>
+                        </div>
+                        <div class="lead" style="margin-left: 10px;">
+                            <h3 class="h5 font-weight-bold">По Нижнему Новгороду</h3>
+                            <p class="mb-1"><strong>300 руб.</strong></p>
+                            <p class="small mb-0">На следующий день после готовности</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4 border-right">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-danger">
+                            <i class="fas fa-truck fa-2x"></i>
+                        </div>
+                        <div class="lead" style="margin-left: 10px;">
+                            <h3 class="h5 font-weight-bold">По области и России</h3>
+                            <p class="mb-1"><strong>300 руб. + услуги курьера</strong></p>
+                            <p class="small mb-0">Сроки уточняйте у менеджера</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-danger">
+                            <i class="fas fa-store fa-2x"></i>
+                        </div>
+                        <div class="lead" style="margin-left: 10px;">
+                            <h3 class="h5 font-weight-bold">Самовывоз</h3>
+                            <p class="mb-1"><strong>Бесплатно</strong></p>
+                            <p class="small mb-0">Пн-Пт, 10:00-19:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 rounded-4 shadow-sm mb-5 overflow-hidden">
+        <div class="card-header bg-dark text-white py-3">
+            <h2 class="h4 mb-0 lead" style="font-weight: bold;">Технические требования</h2>
+        </div>
+        <div class="card-body p-0 lead">
+            <div class="row no-gutters">
+                <div class="col-md-6 p-4 border-right">
+                    <div class="mb-4">
+                        <h3 class="h5 font-weight-bold text-danger">Форматы файлов</h3>
+                        <div class="d-flex flex-wrap">
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">PDF</span>
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">AI</span>
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">EPS</span>
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">CDR</span>
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">PSD</span>
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">INDD</span>
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">TIFF</span>
+                            <span class="badge badge-light border mr-2 mb-2 p-2" style="color: black;">JPEG</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="h5 lead text-danger">Требования к макетам</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Размер соответствует продукции</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Фон вынесен на 3-5 мм</li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> Разрешение 300 dpi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 p-4">
+                    <div class="mb-4">
+                        <h3 class="h5 font-weight-bold text-danger">Цветовые модели</h3>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="color-circle mr-3" style="background: linear-gradient(to right, cyan, magenta, yellow, black);"></div>
+                            <div style="margin-left: 10px;">
+                                <strong>CMYK</strong> - основная цветовая модель
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="color-circle mr-3" style="background: #000;"></div>
+                            <div style="margin-left: 10px;">
+                                <strong>Черный</strong> - чистый (0,0,0,100)
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="h5 font-weight-bold text-danger">Дополнительно</h3>
+                        <p>Для светлых изображений по границе - черная рамка (1 мм)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5 align-items-center">
+        <div class="col-lg-6 lead">
+            <div class="ps-lg-4">
+                <h2 class="h3 mb-4 font-weight-bold text-dark">Услуга цветопробы</h2>
+                <div class="card border-0 rounded-4 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="mr-3 text-danger">
+                                <i class="fas fa-eye-dropper fa-2x"></i>
+                            </div>
+                            <div style="margin-left: 10px;">
+                                <p>Убедитесь в точности цветопередачи перед печатью тиража. Цветопроба позволяет избежать ошибок и недочетов.</p>
+                            </div>
+                        </div>
+                        <div class="alert alert-danger">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-exclamation-triangle mr-3 fa-2x"></i>
+                                <div style="margin-left: 10px;">
+                                    <strong>Важно!</strong> Без цветопробы претензии по цветопередаче не принимаются
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box p-3 rounded" style="background-color: #f8f9fa;">
+                            <h4 class="h5 font-weight-bold mb-3">Стоимость:</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Цифровая печать: <strong>150 руб.</strong></li>
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> При заказе от 3000 руб. - <strong>бесплатно</strong></li>
+                                <li><i class="fas fa-check text-success mr-2"></i> Другие виды печати - уточняйте</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="ps-lg-4 lead">
+                <h2 class="h3 mb-4 font-weight-bold text-dark">Доработка и отрисовка макетов</h2>
+                <div class="card border-0 rounded-4 shadow-sm">
+                    <div class="card-header bg-danger text-white py-3">
+                        <h3 class="h5 mb-0 font-weight-bold">Профессиональная подготовка к печати</h3>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="mr-3 text-danger">
+                                <i class="fas fa-magic fa-2x"></i>
+                            </div>
+                            <div style="margin-left: 10px;" class="lead">
+                                <p>Наши дизайнеры помогут доработать ваш макет или создать новый с нуля, полностью соответствующий техническим требованиям печати.</p>
+                            </div>
+                        </div>
+
+                        <div class="pricing-box p-3 rounded mb-3 lead" style="background-color: #f8f9fa;">
+                            <h4 class="h5 font-weight-bold mb-3">Стоимость услуг:</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Корректировка макета: <strong>от 300 руб.</strong></li>
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Полная отрисовка: <strong>от 1000 руб.</strong></li>
+                                <li><i class="fas fa-check text-success mr-2"></i> Срочные работы: <strong>+50% к стоимости</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="alert alert-danger">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-info-circle mr-3 fa-2x"></i>
+                                <div class="lead" style="margin-left: 10px;">
+                                    <strong>Для оценки работ</strong> пришлите исходные файлы на почту или принесите в офис
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .rounded-4 {
+        border-radius: 1rem !important;
+    }
+    .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    .divider {
+        position: relative;
+    }
+    .divider:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background: rgb(178, 34, 34);
+    }
+    .color-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+    }
+    .badge-light {
+        background-color: #f8f9fa;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{% endblock %}

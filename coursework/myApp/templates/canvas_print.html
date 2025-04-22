@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center lead" style="color: rgb(178, 34, 34); margin-top: -50px; font-size: 36px;" >Печать на холсте</h1>
+    <div class="row align-items-center">
+        <div class="col-md-6 lead">
+            <p>Широкоформатная печать на холсте позволяет воссоздавать репродукции шедевров любимых художников, легко превращая их в изюминку интерьера. Современное оборудование на высоком уровне передает тона, буквально вдыхая в готовую продукцию жизнь.</p>
+            <p>Типографии можно поручить напечатать картину с пейзажем, портретом знаменитости или абстракцией. Используемый материал имеет натуральную тканевую основу – 100% хлопок. Благодаря фактурной поверхности, продукт приобретает эффект художественного полотна.</p>
+            <p>Благодаря выгодным ценам вы сможете дешево получить достойное украшение рабочего или домашнего пространства. Напечатанная на холсте картинка также может использоваться в качестве рекламы или подарка.</p>
+        </div>
+        <div class="col-md-6 text-center" style="margin-top: 20px;">
+            <img src="/media/canvas1.jpg" class="img-fluid" alt="Пример печати на холсте" style="max-width: 80%;">
+        </div>
+    </div>
+
+    <div class="calculator-container p-4 mt-4" style="background: #f0f0f0; border-radius: 10px;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="lead">Калькулятор расчета стоимости печати</h2>
+                <form id="canvasCalculator">
+                    <label for="width" class="lead">Ширина (см)</label>
+                    <input type="number" id="width" class="form-control" required>
+
+                    <label for="height" class="lead">Длина (см)</label>
+                    <input type="number" id="height" class="form-control" required>
+
+                    <label for="quantity"class="lead">Количество</label>
+                    <input type="number" id="quantity" class="form-control" value="1" required>
+
+                    <button type="submit" class="btn btn-secondary mt-3 lead">Рассчитать</button>
+                </form>
+            </div>
+            <div class="col-md-6 text-center">
+                <h3 class="lead">Общая стоимость</h3>
+                <p id="totalArea" class="lead">Общая площадь: 0 м²</p>
+                <p id="totalPerimeter" class="lead">Длина периметра: 0 м</p>
+                <p id="canvasCost" class="lead">Стоимость печати холста: 0 ₽</p>
+                <p id="frameCost" class="lead">Стоимость подрамника: 0 ₽</p>
+                <h4 id="finalPrice" style="color: rgb(178, 34, 34);" class="lead">0 ₽</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center mt-5">
+        <div class="col-md-6 text-center">
+            <img src="/media/canvas2.jpg" class="img-fluid" alt="Варианты натяжек" style="max-width: 60%;">
+        </div>
+        <div class="col-md-6">
+            <h2 class="lead" style="font-weight: bold;">Разновидности натяжек на подрамник</h2>
+            <ul class="lead">
+                <li><strong>Галерейная натяжка:</strong> боковые грани подрамника закрыты тканью, а крепеж происходит на задней стороне рамы.</li>
+                <li><strong>Студийная натяжка:</strong> полотно обтягивает подрамник, при этом торцы оставляют белыми.</li>
+                <li><strong>Стандартная натяжка:</strong> на торцах заметны крепежные элементы, требует тщательного подбора багета.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="mt-5 lead" style="font-weight: bold;">Цены и размеры</h2>
+    <table class="table table-bordered lead" style="margin-bottom: 40px;">
+        <thead class="table-dark">
+            <tr>
+                <th>Размеры (см.)</th>
+                <th colspan="2">Холст натуральный (Германия)</th>
+                <th colspan="2">Холст Сатиновый Canon</th>
+                <th colspan="2">Холст искусственный</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Подрамник 2см</th>
+                <th>Подрамник 4см</th>
+                <th>Подрамник 2см</th>
+                <th>Подрамник 4см</th>
+                <th>Подрамник 2см</th>
+                <th>Подрамник 4см</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>30x45</td><td>1300 ₽</td><td>1500 ₽</td><td>1450 ₽</td><td>1640 ₽</td><td>1240 ₽</td><td>1420 ₽</td></tr>
+            <tr><td>40x60</td><td>1900 ₽</td><td>2040 ₽</td><td>2100 ₽</td><td>2340 ₽</td><td>1700 ₽</td><td>2160 ₽</td></tr>
+            <tr><td>50x70</td><td>2400 ₽</td><td>2700 ₽</td><td>2840 ₽</td><td>3140 ₽</td><td>2270 ₽</td><td>2670 ₽</td></tr>
+            <tr><td>60x95</td><td>3340 ₽</td><td>3730 ₽</td><td>4050 ₽</td><td>4440 ₽</td><td>3130 ₽</td><td>3620 ₽</td></tr>
+            <tr><td>80x120</td><td>4750 ₽</td><td>5250 ₽</td><td>5950 ₽</td><td>6450 ₽</td><td>4390 ₽</td><td>4890 ₽</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+document.getElementById('canvasCalculator').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let width = document.getElementById('width').value / 100;
+    let height = document.getElementById('height').value / 100;
+    let quantity = document.getElementById('quantity').value;
+    let area = width * height * quantity;
+    let perimeter = 2 * (width + height) * quantity;
+    let canvasCost = area * 1200;
+    let frameCost = perimeter * 250;
+    let finalPrice = canvasCost + frameCost;
+
+    document.getElementById('totalArea').textContent = `Общая площадь: ${area.toFixed(2)} м²`;
+    document.getElementById('totalPerimeter').textContent = `Длина периметра: ${perimeter.toFixed(2)} м`;
+    document.getElementById('canvasCost').textContent = `Стоимость печати холста: ${canvasCost.toFixed(0)} ₽`;
+    document.getElementById('frameCost').textContent = `Стоимость подрамника: ${frameCost.toFixed(0)} ₽`;
+    document.getElementById('finalPrice').textContent = `${finalPrice.toFixed(0)} ₽`;
+});
+</script>
+{% endblock %}

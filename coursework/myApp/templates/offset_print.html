@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center lead" style="font-size: 36px; color: rgb(178, 34, 34); margin-top: -20px">Офсетная печать</h1>
+    <div class="row">
+        <div class="col-md-6 lead">
+            <p style="margin-top: 20px;">
+                Офсетная печать – производство полиграфии, которое основывается на непрямом оттиске изображения
+                с промежуточного цилиндра или пластины на бумажный носитель. Данный способ выгоден при изготовлении
+                больших тиражей печатных изделий.
+            </p>
+            <p>
+                Использование высокотехнологичного оборудования и специальных металлических форм обеспечивает
+                экономичность, и полную автоматизацию основных и постпечатных процессов. Офсетным способом можно
+                переносить изображения на любой материал: бланки, пластик, картон, мелованную и газетную бумагу,
+                визитки и листовки.
+            </p>
+            <p>
+                При полноцветной печати CMYK используются 4 основных цвета, если их недостаточно, чтобы передать нужную
+                гамму оттенков, подойдут смесовые краски, подбираемые по шкале PANTONE, и используемые в дальнейшем
+                как эталонный шаблон.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/media/of1.jpg" class="img-fluid" alt="Офсетная печать 1" style="margin-top: 20px;">
+                </div>
+                <div class="col-md-6">
+                    <img src="/media/of2.jpg" class="img-fluid" alt="Офсетная печать 2" style="margin-top: 20px;">
+                </div>
+                <div class="col-md-6">
+                    <img src="/media/of4.jpg" class="img-fluid" alt="Офсетная печать 2" style="margin-top: 20px;">
+                </div>
+                <div class="col-md-6">
+                    <img src="/media/of3.jpg" class="img-fluid" alt="Офсетная печать 2" style="margin-top: 20px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="mt-4 lead" style="font-weight: bold;">Виды офсетной печати</h2>
+            <ul class="lead">
+                <li><strong>С увлажнением.</strong> Это стандартный метод, который предполагает нанесение особых растворов, которые отталкивают краску, образуя пробелы между словами.</li>
+                <li><strong>Сухая.</strong> Вместо отталкивающих пигмент растворов применяется силикон, за счёт которого формируются свободные пространства между символами.</li>
+            </ul>
+
+            <h2 class="mt-4 lead" style="font-weight: bold;">По принципу действия машины различаются на:</h2>
+            <ul class="lead">
+                <li><strong>Листовые</strong> – отпечатываются отдельные странички.</li>
+                <li><strong>Ролевые</strong> – эскиз переносится на рулоны бумаги, которые впоследствии нарезаются в заданном типоразмере.</li>
+            </ul>
+
+            <h2 class="mt-4 lead" style="font-weight: bold;">По форматированию:</h2>
+            <ul class="lead">
+                <li>Печать бывает узкоформатной, полноформатной и широкоформатной.</li>
+                <li>Наиболее современной и практичной считается цифровой офсет.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="mt-4 lead" style="font-weight: bold;">Стоимость офсетной печати</h2>
+        <table class="table table-bordered lead" style="margin-bottom: 40px;">
+            <thead class="table-dark">
+                <tr>
+                    <th>Формат / кол-во</th>
+                    <th>500</th>
+                    <th>1 000</th>
+                    <th>2 000</th>
+                    <th>3 000</th>
+                    <th>5 000</th>
+                    <th>10 000</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>А7</td><td>1100</td><td>1200</td><td>1400</td><td>2500</td><td>3600</td><td>3700</td></tr>
+                <tr><td>А6</td><td>1350</td><td>1400</td><td>2800</td><td>3600</td><td>3600</td><td>7100</td></tr>
+                <tr><td>А5</td><td>2780</td><td>2800</td><td>5040</td><td>7300</td><td>7380</td><td>14700</td></tr>
+                <tr><td>Листовки 210х99</td><td>2000</td><td>2100</td><td>4200</td><td>5300</td><td>5580</td><td>11070</td></tr>
+                <tr><td>А4</td><td>4800</td><td>4900</td><td>9800</td><td>14000</td><td>14700</td><td>27000</td></tr>
+                <tr><td>А3</td><td>9700</td><td>9800</td><td>19040</td><td>25500</td><td>27880</td><td>52480</td></tr>
+            </tbody>
+        </table>
+</div>
+{% endblock %}
