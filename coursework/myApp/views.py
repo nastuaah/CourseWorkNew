@@ -3,7 +3,7 @@ import json
 import os
 from django.contrib import messages
 from django.conf import settings
-from .models import Product, Portfolio, PaymentDelivery, Contact
+from .models import Product, Contact
 
 def home(request):
     return render(request, 'home.html')
@@ -21,12 +21,10 @@ def portfolio(request):
                 reviews = json.load(f)
         except (json.JSONDecodeError, IOError) as e:
             print(f"Ошибка загрузки JSON-файла: {e}")
-    projects = Portfolio.objects.all()
-    return render(request, 'portfolio.html', {'projects': projects, 'reviews': reviews})
+    return render(request, 'portfolio.html', {'reviews': reviews})
 
 def payment_delivery(request):
-    info = PaymentDelivery.objects.first()
-    return render(request, 'payment_delivery.html', {'info': info})
+    return render(request, 'payment_delivery.html')
 
 def contacts(request):
     if request.method == "POST":

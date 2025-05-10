@@ -10,20 +10,6 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-class Portfolio(models.Model):
-    title = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='portfolio/')
-    description = models.TextField()
-
-    def __str__(self):
-        return self.title
-
-class PaymentDelivery(models.Model):
-    title = models.CharField(max_length=255)
-    content = models.TextField()
-
-    def __str__(self):
-        return self.title
 
 class Contact(models.Model):
     first_name = models.CharField(max_length=50)
