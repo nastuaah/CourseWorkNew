@@ -123,15 +123,28 @@
 
                         <script>
                             document.addEventListener("DOMContentLoaded", function () {
+                                // Валидация формы
+                                const form = document.getElementById('contactForm');
+
+                                form.addEventListener('submit', function(event) {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+
+                                    form.classList.add('was-validated');
+
+                                    if (form.checkValidity()) {
+                                        sessionStorage.setItem("formSubmitted", "true");
+                                    }
+                                }, false);
+
+                                // Показ модального окна после успешной отправки
                                 if (sessionStorage.getItem("formSubmitted")) {
                                     const modal = new bootstrap.Modal(document.getElementById("thankYouModal"));
                                     modal.show();
                                     sessionStorage.removeItem("formSubmitted");
                                 }
-
-                                document.getElementById("contactForm").addEventListener("submit", function () {
-                                    sessionStorage.setItem("formSubmitted", "true");
-                                });
                             });
                         </script>
                     </div>
