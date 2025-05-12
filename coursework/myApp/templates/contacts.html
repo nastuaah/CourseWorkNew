@@ -123,7 +123,6 @@
 
                         <script>
                             document.addEventListener("DOMContentLoaded", function () {
-                                // Валидация формы
                                 const form = document.getElementById('contactForm');
 
                                 form.addEventListener('submit', function(event) {
@@ -139,7 +138,7 @@
                                     }
                                 }, false);
 
-                                // Показ модального окна после успешной отправки
+
                                 if (sessionStorage.getItem("formSubmitted")) {
                                     const modal = new bootstrap.Modal(document.getElementById("thankYouModal"));
                                     modal.show();
