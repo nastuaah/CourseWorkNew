@@ -88,7 +88,7 @@ DATABASES = {
     }
 }
 
-WSGI_APPLICATION = 'coursework.coursework.wsgi.application'
+WSGI_APPLICATION = 'coursework/coursework.wsgi.application'
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
