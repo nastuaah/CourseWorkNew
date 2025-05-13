@@ -1,2 +1,4 @@
-Django
-gunicorn
+Django==4.2
+gunicorn==23.0.0
+whitenoise==6.4.0
+python-dotenv
