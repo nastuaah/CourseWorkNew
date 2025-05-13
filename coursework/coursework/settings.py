@@ -75,8 +75,6 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'coursework/coursework.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
@@ -88,7 +86,7 @@ DATABASES = {
     }
 }
 
-WSGI_APPLICATION = 'coursework/coursework.wsgi.application'
+WSGI_APPLICATION = 'coursework.wsgi.application'
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
