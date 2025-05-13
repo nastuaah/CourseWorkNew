@@ -1,1 +1,1 @@
-web: gunicorn coursework.coursework.wsgi
+web: gunicorn coursework/coursework.wsgi
