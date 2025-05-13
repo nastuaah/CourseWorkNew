@@ -1,0 +1,143 @@
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-strip-container {
+    width: 100%;
+    max-width: 1200px; /* Подбираем ширину, чтобы влезало 4 фото */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-strip {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(4 * 300px);
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: 300px; /* Увеличиваем ширину */
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+       .reviews-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .reviews-strip {
+        display: flex;
+        transition: transform 0.3s ease;
+    }
+
+    .review-item {
+        flex: 0 0 100%;
+        padding: 20px;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .review-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .review-item p {
+        margin-top: 10px;
+    }
+
+    .prev-button, .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .prev-button {
+        left: 10px;
+    }
+
+    .next-button {
+        right: 10px;
+    }
+
+    .prev-button:hover, .next-button:hover {
+        background-color: gray;
+    }
+
+        .reviews-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        position: relative;
+    }
+
+    .reviews {
+        width: 70%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .review {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .review-img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .review-text {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .arrow {
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .left-arrow {
+        left: 0;
+    }
+
+    .right-arrow {
+        right: 0;
+    }
