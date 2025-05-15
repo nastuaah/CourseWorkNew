@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+WSGI_APPLICATION = 'coursework.wsgi.application'
 ROOT_URLCONF = 'coursework.urls'
 
 TEMPLATES = [
@@ -86,7 +87,6 @@ DATABASES = {
     }
 }
 
-WSGI_APPLICATION = 'coursework.wsgi.application'
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
