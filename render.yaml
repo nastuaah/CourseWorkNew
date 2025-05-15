@@ -5,4 +5,4 @@ services:
     buildCommand: |
       pip install -r requirements.txt
     startCommand: |
-      gunicorn /opt/render/project/src/coursework/coursework/wsgi.py:application --bind 0.0.0.0:$PORT
+      cd coursework && gunicorn coursework.wsgi:application --bind 0.0.0.0:$PORT
