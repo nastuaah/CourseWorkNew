@@ -3,7 +3,7 @@ services:
     name: coursework
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python -m gunicorn coursework.wsgi:application --bind 0.0.0.0:$PORT
+    startCommand: gunicorn coursework.wsgi:application --bind 0.0.0.0:$PORT --pythonpath /opt/render/project/src/coursework
     envVars:
       - key: PYTHONPATH
         value: /opt/render/project/src
