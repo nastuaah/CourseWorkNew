@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/activity</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/issues</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/pulls</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/actions</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/security</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/blob/master/Procfile</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/blob/master/__init__.py</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/blob/master/render.yaml</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/blob/master/requirements.txt</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/releases</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/search?q=repo%3Anastuaah%2FCourseWorkNew++language%3AJavaScript</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/search?q=repo%3Anastuaah%2FCourseWorkNew++language%3ACSS</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/search?q=repo%3Anastuaah%2FCourseWorkNew++language%3AHTML</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/search?q=repo%3Anastuaah%2FCourseWorkNew++language%3APython</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels?sort=name-asc</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels?sort=name-desc</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels?sort=count-desc</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels?sort=count-asc</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/bug</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/documentation</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/duplicate</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/enhancement</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/good%20first%20issue</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/help%20wanted</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/invalid</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/question</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/labels/wontfix</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=due_date&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=due_date&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=completeness&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=completeness&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=title&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=title&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=count&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=count&amp;state=open</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=due_date&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=due_date&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=completeness&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=completeness&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=title&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=title&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=desc&amp;sort=count&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/nastuaah/CourseWorkNew/milestones?direction=asc&amp;sort=count&amp;state=closed</loc>
+  <lastmod>2025-05-16T19:04:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
