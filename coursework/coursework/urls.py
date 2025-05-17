@@ -19,19 +19,11 @@ from django.urls import path, include
 
 from django.conf import settings
 from django.conf.urls.static import static
-from django.views.generic import TemplateView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('myApp/', include('myApp.urls')),
-    path(
-        'yandex_a23d545736f979c2.html',
-        TemplateView.as_view(
-            template_name='yandex_a23d545736f979c2.html',
-            content_type='text/plain'
-        ),
-        name='yandex-verification'
-    ),
 ]
 
 if settings.DEBUG:
